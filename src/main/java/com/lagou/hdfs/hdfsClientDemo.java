@@ -44,7 +44,7 @@ public class hdfsClientDemo {
         //上传文件
         //src：源文件目录：本地目录
         //dst：目标文件目录，hdfs路径
-        fs.copyFromLocalFile(new Path("e:/BS_70145_SPT_150000.txt"),new Path("/BS_70145_SPT_150000.txt"));
+        fs.copyFromLocalFile(new Path("e:/4097spt.txt"),new Path("/4097spt.txt"));
 
     }
 
@@ -54,7 +54,7 @@ public class hdfsClientDemo {
         //bool：是否删除原文件
         //src:hdfs路径
         //dst:目标路径
-        fs.copyToLocalFile(true,new Path("/BS_70145_SPT_150000.txt"),new Path("e:/BS_70145_SPT_150000_copy.txt"));
+        fs.copyToLocalFile(false,new Path("/4097spt.txt"),new Path("e:/4097.txt"));
 
     }
 

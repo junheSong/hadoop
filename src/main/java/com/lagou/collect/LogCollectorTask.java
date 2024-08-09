@@ -15,6 +15,7 @@ import java.net.URISyntaxException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+import java.util.StringTokenizer;
 import java.util.TimerTask;
 import java.util.logging.SimpleFormatter;
 
@@ -72,6 +73,7 @@ public class LogCollectorTask extends TimerTask {
         } catch (IOException | URISyntaxException | InterruptedException e) {
             e.printStackTrace();
         }
+
 
     }
 }
